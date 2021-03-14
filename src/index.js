@@ -1,4 +1,4 @@
-const PORT = 4002;
+const PORT = 80;
 const KEY = 'abcde';
 const PATH_LENGTH = 4;
 
