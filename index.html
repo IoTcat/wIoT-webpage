@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wIoT WebPage Service</title>
+	<script src="https://cdn.yimian.xyz/ushio-js/ushio-head.min.js"></script>
+</head>
+<body>
+<h3><b>Path: </b><span id="path"></span></h3>
+<h3><b>Key: </b><span id="key"></span></h3>
+
+<script type="text/javascript">
+	$.get('/GETKEY', (res) => {
+		$('#path').html(res.path);
+		$('#key').html(res.key);
+
+	});
+</script>
+<script src="https://cdn.yimian.xyz/ushio-js/ushio-footer.min.js"></script>
+</body>
+</html>
