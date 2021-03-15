@@ -2,19 +2,19 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>wIoT WebPage</title>
 	<script type="text/javascript">lang = ['en'];block_aplayer = true;</script>
-	<script src="https://cdn.yimian.xyz/ushio-js/ushio-head.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" charset="utf-8"></script>
 </head>
 <body>
 <div id="main"></div>
 <script type="text/javascript">
 	setInterval(()=>{
-		$.get('/GET?path='+page.path, res => {
+		$.get('/GET?path='+window.location.pathname, res => {
 			$('#main').html(res);
 		})
-	}, 1000);
+	}, 2000);
 </script>
-<script src="https://cdn.yimian.xyz/ushio-js/ushio-footer.min.js" charset="utf-8"></script>
 </body>
 </html>

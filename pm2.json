@@ -2,7 +2,7 @@
     "name": "wIoT-webpage",
     "script": "src/index.js",
     "restart_delay": 43200000,
-    "instances": "2",
+    "instances": "1",
     "env": {
         "NODE_ENV": "development"
     },
